@@ -17,13 +17,21 @@ Simple app using docker to "get the hang of things".
 
 3. Clone repo
 
-4. Run docker using the following commands:
+4. build docker using the following commands:
 
 ```
 docker build -t hello-world .
 ```
 
+5. run docker:
+```
+docker run -p 80:80 hello-world
+```
 
+6. Add a Volume
+```
+docker run -p 80:80 -v /Users/mapineda/desktop/coding/docker/hello-world-docker/src:/var/www/html hello-world
+```
 
 ## Contact:
 
